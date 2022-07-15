@@ -1,7 +1,9 @@
 <article>
   <a href="{{ site.github.url }}{{ post.url }}">
     <div class="featured-post" {% if post.image %}style="background-image:url({{ site.github.url }}/assets/img/{{ post.image }})"{% endif %}>
-      <h2><span>{{ post.title }}</span></h2>
+      <h2><span>{{ post.title }}</span>
+      <small style="color:#999">[ {{ post.date | date: "%Y %m %d" }} ]</small>
+      </h2>
     </div>
   </a>
 </article>

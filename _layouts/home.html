@@ -3,20 +3,43 @@ layout: default
 title: Home
 ---
 
-{% for post in paginator.posts %}
-  {% include featured-post.html %}
-{% endfor %}
+Fax an
+<a
+  href="https://bafybeieewpujge7zc6mqfs2mqqsb3bmleo2omgtwjz4vcfu652hy426nzm.ipfs.nftstorage.link/"
+  target="_blank"
+  >offline-bubble form</a
+>
+<!--
+(<a
+  href="https://bafybeieewpujge7zc6mqfs2mqqsb3bmleo2omgtwjz4vcfu652hy426nzm.ipfs.nftstorage.link/"
+  download="nft-allow-form.pdf"
+  >download</a
+>)--> with your ethereum address to
+<strong>+1 (929) 446-3491</strong>
+
+{% for post in paginator.posts %} {% include featured-post.html %} {% endfor %}
 
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>
+  <a
+    class="pagination-button pagination-active next"
+    href="{{ site.github.url }}{{ paginator.next_page_path }}"
+    >{{ site.data.settings.pagination.previous_page }}</a
+  >
   {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.previous_page }}</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-button pagination-active" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>
+  <span class="pagination-button"
+    >{{ site.data.settings.pagination.previous_page }}</span
+  >
+  {% endif %} {% if paginator.previous_page %}
+  <a
+    class="pagination-button pagination-active"
+    href="{{ site.baseurl }}{{ paginator.previous_page_path }}"
+    >{{ site.data.settings.pagination.next_page }}</a
+  >
   {% else %}
-    <span class="pagination-button">{{ site.data.settings.pagination.next_page }}</span>
+  <span class="pagination-button"
+    >{{ site.data.settings.pagination.next_page }}</span
+  >
   {% endif %}
 </div>
