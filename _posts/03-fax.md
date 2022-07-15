@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Incoming fax #3"
-categories: sample
+categories: fax
 tags: [sample]
 image: fax3.pdf
 ---
