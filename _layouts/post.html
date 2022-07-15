@@ -10,9 +10,10 @@ layout: default
     {% include post-date.html %}
   {% endif %}
   {% if page.image %}
-    <div class="featured-image">
+  <iframe src="{{ site.github.url }}/assets/faxes/{{ page.image }}" />
+    <!-- <div class="featured-image">
       <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
-    </div>
+    </div> -->
   {% endif %}
   <article>
     {{ content }}
